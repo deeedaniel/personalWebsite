@@ -42,5 +42,6 @@ body {
     left: 90px;
     bottom: 250px;
     margin-right: 100px;
+    float: left;
     font-size: 25px;
 }
