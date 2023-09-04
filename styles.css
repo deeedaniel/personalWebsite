@@ -29,7 +29,15 @@ body {
     font-weight:bold;
 }
 
-.mainImage {
+.gfImage {
+    width: 500px;
+    position: relative;
+    top: 30px;
+    left: 920px;
+    border-radius: 100px;
+}
+
+.familyImage {
     width: 500px;
     position: relative;
     top: 30px;
@@ -40,8 +48,6 @@ body {
 .bio {
     position: relative;
     left: 90px;
-    bottom: 250px;
+    bottom: 540px;
     margin-right: 100px;
-    float: left;
-    font-size: 25px;
 }
