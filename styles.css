@@ -1,61 +1,96 @@
-body {
-    background-color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:#111111;
+* {
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    position: relative;
+    box-sizing: border-box;
 }
 
-.top-border {
-    height: 50px;
+.topHeader {
     background-color: #111111;
+    color: white;
     position: fixed;
+    height: 35px;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
-    color: white;
-    font-weight:340;
-    margin: 0 auto; /* Center horizontally */
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    font-size: 25px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
-.big {
-    position: absolute;
-    top: 90px;
-    left: 120px;
-    font-size: 40px;
+h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight:bold;
-}
-
-.gfImage {
-    width: 500px;
-    position: relative;
-    top: 100px;
-    left: 800px;
-    border-radius: 100px;
-    display:block;
-    margin-bottom: 125px;
-}
-
-.familyImage {
-    width: 500px;
-    position: relative;
-    left: 800px;
-    border-radius: 100px;
+    font-weight: bolder;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    height: 100%;
+    color: #111111;
 }
 
 .bio {
-    position: absolute;
-    font-size: 25px;
+    position: relative;
+    text-align: center;
+    bottom: 245px;
+    max-width: 300px;
+    color: #111111;
     font-weight: lighter;
-    top: 150px;
-    left: 250px;
-    bottom: 660px;
-    max-width: 470px;
+}
+
+img {
+    position: absolute;
+    width: 300px;
+    border-radius: 50px;
+}
+
+.gfImage {
+    top: 240px;
+
+}
+
+.familyImage {
+    top: 420px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centered content within the viewport's height */
+}
+
+@media (min-width: 1500px) {
+    h1 {
+        top: 60px;
+        right: 230px;
+        font-size: 50px;
+    }
+    .bio {
+        position: absolute;
+        top:0px;
+        text-align: left;
+        padding-top: 70px;
+        font-size: 25px;;
+        min-width: 400px;
+        left: 340px;
+        
+    }
+    .gfImage {
+        position: absolute;
+        width:400px;
+        top: 0;
+        right: 330px;
+    }
+    .familyImage {
+        position: absolute;
+        top: 250px;
+        width: 400px;
+        right: 330px;
+    }
 }
