@@ -11,7 +11,7 @@
     background-color: #111111;
     color: white;
     position: fixed;
-    height: 35px;
+    height: 40px;
     top: 0;
     left: 0;
     right: 0;
@@ -20,6 +20,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    font-size: 20px;
 }
 
 h1 {
@@ -29,15 +30,15 @@ h1 {
     margin: 0;
     justify-content: center;
     align-items: center;
-    top: 50px;
+    top: 55px;
     height: 100%;
     color: #111111;
 }
 
 .bio {
-    position: relative;
+    position: absolute;
     text-align: center;
-    bottom: 245px;
+    top: 60px;
     max-width: 300px;
     color: #111111;
     font-weight: lighter;
@@ -50,12 +51,12 @@ img {
 }
 
 .gfImage {
-    top: 240px;
+    top: 290px;
 
 }
 
 .familyImage {
-    top: 420px;
+    top: 470px;
 }
 
 .centered {
@@ -63,6 +64,36 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Centered content within the viewport's height */
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    fill: #000000;
+    font-size: 50px;
+    padding-top: 0px;
+    bottom: 50px;
+}
+
+.githubIcon {
+    color: #111111;
+    transition: color 0.2s
+}
+
+.instaIcon {
+    color: #111111;
+    margin-left: 25px;
+    transition: color 0.2s
+}
+
+.githubIcon:hover {
+    color:#a7a7a7
+}
+
+.instaIcon:hover {
+    color:#a7a7a7
 }
 
 @media (min-width: 1500px) {
@@ -73,24 +104,44 @@ img {
     }
     .bio {
         position: absolute;
-        top:0px;
+        top: 0px;
         text-align: left;
         padding-top: 70px;
         font-size: 25px;;
         min-width: 400px;
         left: 340px;
-        
+    }
+    .topHeader {
+            background-color: #111111;
+            color: white;
+            position: fixed;
+            height: 40px;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            font-size: 25px;
     }
     .gfImage {
         position: absolute;
-        width:400px;
+        width:500px;
         top: 0;
-        right: 330px;
+        right: 250px;
     }
     .familyImage {
         position: absolute;
-        top: 250px;
-        width: 400px;
-        right: 330px;
+        top: 300px;
+        width: 500px;
+        right: 250px;
+    }
+    .logos {
+        position: absolute;
+        top: 340px;
+        left: 450px;
+        font-size: 80px;
     }
 }
