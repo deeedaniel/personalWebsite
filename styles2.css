@@ -1,5 +1,83 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.welcome {
+    font-size: 20px;
+    margin-left: 15px;;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: #111111;
+    height: 50px;
+    z-index: 1;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    transition: 0.2s;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #2a2a2a;
+}
+
+.container {
+    position: relative;
+    top: 25px;
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.photoGallery {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.photos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1500px){
+    .welcome{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .photoGallery {
+        flex-direction: column;
+    }
+}
