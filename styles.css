@@ -125,6 +125,10 @@
     display: none;
 }
 
+.headerLinks{
+    font-size: 12px;
+}
+
 @media screen and (min-width: 1500px) {
     body {
         height: 850px;
@@ -198,5 +202,9 @@
         display: none;
         font-size: 100px;
         align-self: start;
+    }
+
+    .headerLinks{
+        font-size: 17px;
     }
 }
