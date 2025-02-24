@@ -3,8 +3,6 @@ function Daniel() {
     <div className="flex md:flex-row flex-col justify-center min-h-[calc(100vh-80px)] md:space-x-10 space-x-0 bg-gradient-to-b from-slate-300 to-slate-400">
       <img
         className="md:max-h-[30vh] max-w-[60vw] rounded-full md:my-auto my-0 md:mx-0 mx-auto drop-shadow-md"
-        src="/homeImage.png"
-        className="max-h-[40vh] rounded-full my-auto drop-shadow-md"
         src={import.meta.env.BASE_URL + "homeImage.png"}
         alt="Image of me holding a camera"
       />
