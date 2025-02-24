@@ -11,10 +11,10 @@ function About() {
             alt="About me image, which is me as a kid"
             className="max-h-[40vh] rounded-3xl my-auto drop-shadow-lg"
           />
-          <p className="w-[40vw] text-xl">
+          <p className="w-[35vw] text-xl">
             Hi there! I’m Daniel Nguyen, a passionate and driven second-year
-            Computer Science student with a love for building innovative digital
-            experiences.
+            Vietnamese-American Computer Science student with a love for
+            building innovative digital experiences.
             <br />
             <br /> I’ve got experience with a wide range of tools—React,
             TypeScript, MongoDB, Firebase, and more—that help bring my ideas to
