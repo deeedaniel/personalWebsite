@@ -28,7 +28,7 @@ function Projects() {
                 >
                   <div className="w-full h-full overflow-hidden md:rounded-l-3xl rounded-3xl relative">
                     <img
-                      src="/cooledturedbg.png"
+                      src={import.meta.env.BASE_URL + "cooledturedbg.png"}
                       alt="internship background image"
                       className="w-full h-full object-cover md:rounded-l-3xl rounded-3xl brightness-50 hover:brightness-75 transition duration-300"
                     />
@@ -71,7 +71,7 @@ function Projects() {
                 >
                   <div className="w-full h-full overflow-hidden md:rounded-l-3xl rounded-3xl relative">
                     <img
-                      src="/chillguyGroupPic.jpeg"
+                      src={import.meta.env.BASE_URL + "chillguyGroupPic.jpeg"}
                       alt="Image of my project ChillGuy.ai"
                       className="w-full h-full object-cover md:rounded-l-3xl rounded-3xl brightness-50 hover:brightness-75 transition duration-300"
                     />
@@ -110,7 +110,7 @@ function Projects() {
                 >
                   <div className="w-full h-full overflow-hidden md:rounded-l-3xl rounded-3xl relative">
                     <img
-                      src="/resumeImage.jpg"
+                      src={import.meta.env.BASE_URL + "resumeImage.jpg"}
                       alt="Image of my resume"
                       className="w-full h-full object-cover md:rounded-l-3xl rounded-3xl brightness-50 hover:brightness-75 transition duration-300"
                     />

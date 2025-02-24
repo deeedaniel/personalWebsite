@@ -37,7 +37,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="fixed w-full top-0 pt-5 drop-shadow-lg z-50 hidden md:block">
+    <div className="fixed w-full top-0 pt-5 drop-shadow-lg z-50">
       <nav
         className={`max-w-[80vw] mx-auto flex flex-row justify-between py-3 px-5 rounded-full transition duration-300 ${
           scrollY || activeSection === "project" || activeSection === "extra"
@@ -50,29 +50,72 @@ function Navbar() {
             window.scrollTo({ top: 0 });
             setActiveSection("");
           }}
-          className="font-semibold lg:text-2xl md:xl text-white ml-3 hover:text-gray-300 transition duration-300"
+          className="font-semibold lg:text-2xl md:xl text-white ml-3 hover:text-gray-300 transition duration-300 md:block hidden"
         >
           Daniel Nguyen
         </button>
-        <div className="space-x-10 mr-3">
-          <button
-            onClick={() => scrollToSection("about")}
-            className="font-semibold lg:text-2xl md:xl text-white hover:text-gray-300 transition duration-300"
-          >
-            About Me
-          </button>
-          <button
-            onClick={() => scrollToSection("project")}
-            className="font-semibold lg:text-2xl md:xl text-white hover:text-gray-300 transition duration-300"
-          >
-            Experience/Projects
-          </button>
-          <button
-            onClick={() => scrollToSection("extra")}
-            className="font-semibold lg:text-2xl md:xl text-white hover:text-gray-300 transition duration-300"
-          >
-            Extra
-          </button>
+        <button
+          onClick={() => {
+            window.scrollTo({ top: 0 });
+            setActiveSection("");
+          }}
+          className="font-semibold lg:text-2xl md:xl text-white ml-3 hover:text-gray-300 transition duration-300 md:hidden block"
+        >
+          Daniel
+        </button>
+        <div className="space-x-10 mr-3 flex">
+          <div className="hidden md:flex space-x-10">
+            <button
+              onClick={() => scrollToSection("about")}
+              className="font-semibold lg:text-2xl md:xl text-white hover:text-gray-300 transition duration-300 "
+            >
+              About Me
+            </button>
+            <button
+              onClick={() => scrollToSection("project")}
+              className="font-semibold lg:text-2xl md:xl text-white hover:text-gray-300 transition duration-300"
+            >
+              Experience/Projects
+            </button>
+            <button
+              onClick={() => scrollToSection("extra")}
+              className="font-semibold lg:text-2xl md:xl text-white hover:text-gray-300 transition duration-300"
+            >
+              Extra
+            </button>
+          </div>
+          <div className="flex md:hidden space-x-4">
+            <button
+              onClick={() => scrollToSection("about")}
+              className="text-white hover:text-gray-300"
+            >
+              <img
+                className="w-5 filter invert"
+                src={import.meta.env.BASE_URL + "aboutIcon.svg"}
+                alt="about icon"
+              />
+            </button>
+            <button
+              onClick={() => scrollToSection("project")}
+              className="text-white hover:text-gray-300"
+            >
+              <img
+                className="w-5 filter invert"
+                src={import.meta.env.BASE_URL + "expIcon.svg"}
+                alt="experience and projects icon"
+              />
+            </button>
+            <button
+              onClick={() => scrollToSection("extra")}
+              className="text-white hover:text-gray-300"
+            >
+              <img
+                className="w-5 filter invert"
+                src={import.meta.env.BASE_URL + "extraIcon.svg"}
+                alt="extra icon"
+              />
+            </button>
+          </div>
         </div>
       </nav>
     </div>

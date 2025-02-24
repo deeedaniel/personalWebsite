@@ -8,17 +8,17 @@ function Index() {
   return (
     <div className=" bg-slate-300">
       <Navbar />
-      <main>
-        <section id="daniel">
+      <main className="">
+        <section id="daniel" className="">
           <Daniel />
         </section>
-        <section id="about">
+        <section id="about" className="">
           <About />
         </section>
-        <section id="project">
+        <section id="project" className="">
           <Projects />
         </section>
-        <section id="extra">
+        <section id="extra" className=" ">
           <Extra />
         </section>
       </main>

@@ -4,7 +4,7 @@ function About() {
       <div className="mx-auto my-auto flex flex-col">
         <div className="flex lg:flex-row flex-col lg:space-x-16 space-x-0 mt-5">
           <img
-            src="/aboutImage.png"
+            src={import.meta.env.BASE_URL + "aboutImage.png"}
             alt="About me image, which is me as a kid"
             className="max-h-[40vh] max-w-[40vw] rounded-3xl my-auto drop-shadow-lg object-cover mx-auto"
           />
