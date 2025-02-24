@@ -16,7 +16,7 @@ function Daniel() {
           <a href="https://www.instagram.com/deeedaniel" target="_blank">
             <img
               className="w-10"
-              src="instagramIcon.svg"
+              src="/instagramIcon.svg"
               alt="Instagram icon"
             />
           </a>
@@ -27,7 +27,7 @@ function Daniel() {
             <img className="w-10" src="linkedInIcon.svg" alt="LinkedIn icon" />
           </a>
           <a href="https://github.com/deeedaniel" target="_blank">
-            <img className="w-10" src="githubIcon.svg" alt="GitHub icon" />
+            <img className="w-10" src="/githubIcon.svg" alt="GitHub icon" />
           </a>
         </div>
       </div>
