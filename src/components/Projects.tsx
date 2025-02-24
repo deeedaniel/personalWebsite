@@ -10,7 +10,7 @@ function Projects() {
   return (
     <div className="h-[100vh] flex bg-gradient-to-b from-slate-700 to-slate-800">
       <div className="mx-auto my-auto flex flex-col w-full max-w-[90vw]">
-        <h2 className="text-6xl text-white mx-auto mb-8 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-blue-300 to-blue-500 font-semibold leading-tight">
+        <h2 className="text-6xl mx-auto mb-8 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-blue-300 to-blue-500 font-semibold leading-tight">
           Experience + Projects
         </h2>
         <div className="2xl:px-96 px-12">
