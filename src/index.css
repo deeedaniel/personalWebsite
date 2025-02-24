@@ -7,15 +7,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(148 163 184); /* This is the slate-400 color */
+  background: transparent;
   min-height: 100vh;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-
-
 
 @layer base {
   :root {
@@ -72,8 +71,6 @@ html {
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {

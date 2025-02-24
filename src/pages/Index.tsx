@@ -6,7 +6,7 @@ import Extra from "../components/Extra";
 
 function Index() {
   return (
-    <div className=" bg-slate-400">
+    <div className=" bg-slate-300">
       <Navbar />
       <main>
         <section id="daniel">
