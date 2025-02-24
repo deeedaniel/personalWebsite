@@ -19,7 +19,11 @@ function Daniel() {
             href="https://www.linkedin.com/in/daniel-nguyen-363330260/"
             target="_blank"
           >
-            <img className="w-10" src="/linkedInIcon.svg" alt="LinkedIn icon" />
+            <img
+              className="w-10"
+              src={import.meta.env.BASE_URL + "linkedInIcon.svg"}
+              alt="LinkedIn icon"
+            />
           </a>
           <a href="https://github.com/deeedaniel" target="_blank">
             <img
