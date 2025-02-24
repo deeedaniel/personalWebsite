@@ -9,6 +9,7 @@ body {
   padding: 0;
   background: transparent;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 html {

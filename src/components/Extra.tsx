@@ -10,7 +10,7 @@ function Extra() {
   return (
     <div className="h-[100vh] flex bg-gradient-to-b from-slate-800 to-slate-900">
       <div className="mx-auto my-auto flex flex-col w-full max-w-[90vw]">
-        <h2 className="text-6xl mx-auto mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-300 to-white font-semibold overflow-visible">
+        <h2 className=" md:text-6xl sm:text-4xl text-2xl mx-auto mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-300 to-white font-semibold overflow-visible">
           Extra: Videos
         </h2>
         <div className="2xl:px-96 px-12">
@@ -23,8 +23,8 @@ function Extra() {
               <CarouselItem className="flex">
                 <iframe
                   className="mx-auto"
-                  width="560"
-                  height="315"
+                  width="800"
+                  height="450"
                   src="https://www.youtube.com/embed/SI--bNjvQSg?si=XHnwfoi_CJDcOubw"
                   title="YouTube video player"
                   frameBorder="0"
@@ -36,8 +36,8 @@ function Extra() {
               <CarouselItem className="flex">
                 <iframe
                   className="mx-auto"
-                  width="560"
-                  height="315"
+                  width="800"
+                  height="450"
                   src="https://www.youtube.com/embed/UM6B-B2rey8?si=H2FaGPeOmT25tjQ2"
                   title="YouTube video player"
                   frameBorder="0"

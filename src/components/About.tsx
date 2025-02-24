@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="h-[100vh] flex bg-gradient-to-b from-slate-400 to-slate-500">
+    <div className="lg:h-[100vh] h-auto lg:pb-0 pb-10 flex bg-gradient-to-b from-slate-400 to-slate-500">
       <div className="mx-auto my-auto flex flex-col">
         <div className="flex lg:flex-row flex-col lg:space-x-16 space-x-0 mt-5">
           <img
