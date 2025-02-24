@@ -7,7 +7,7 @@ function About() {
         </h2>
         <div className="flex flex-row space-x-16 mt-5">
           <img
-            src="/aboutImage.png"
+            src={import.meta.env.BASE_URL + "aboutImage.png"}
             alt="About me image, which is me as a kid"
             className="max-h-[40vh] rounded-3xl my-auto drop-shadow-lg"
           />

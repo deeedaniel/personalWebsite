@@ -3,7 +3,7 @@ function Daniel() {
     <div className="flex justify-center min-h-[calc(100vh-80px)] space-x-10 bg-gradient-to-b from-slate-300 to-slate-400">
       <img
         className="max-h-[40vh] rounded-full my-auto drop-shadow-md"
-        src={import.meta.env.BASE_URL + "homeImage.svg"}
+        src={import.meta.env.BASE_URL + "homeImage.png"}
         alt="Image of me holding a camera"
       />
       <div className="my-auto">
@@ -33,7 +33,7 @@ function Daniel() {
           <a href="https://github.com/deeedaniel" target="_blank">
             <img
               className="w-10"
-              src={import.meta.env.BASE_URL + "gitHubIcon.svg"}
+              src={import.meta.env.BASE_URL + "githubIcon.svg"}
               alt="GitHub icon"
             />
           </a>
