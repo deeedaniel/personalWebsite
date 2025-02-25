@@ -5,14 +5,23 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { motion } from "framer-motion";
 
 function Projects() {
   return (
     <div className="h-[100vh] flex bg-gradient-to-b from-slate-700 to-slate-800">
       <div className="mx-auto my-auto flex flex-col w-full max-w-[90vw]">
-        <h2 className="md:text-6xl sm:text-4xl text-2xl mx-auto mb-8 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-blue-300 to-blue-500 font-semibold leading-tight">
-          Experience + Projects
-        </h2>
+        <motion.div
+          className="flex justify-center"
+          initial={{ opacity: 0, y: 200 }} // Start invisible, off-screen
+          whileInView={{ opacity: 1, y: 0 }} // Animate when in view
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <h2 className="md:text-6xl sm:text-4xl text-2xl mx-auto mb-8 text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-blue-300 to-blue-500 font-semibold leading-tight">
+            Experience + Projects
+          </h2>
+        </motion.div>
         <div className="2xl:px-96 px-12">
           <Carousel
             opts={{
@@ -130,8 +139,8 @@ function Projects() {
                 </a>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className=" " />
-            <CarouselNext className=" " />
+            <CarouselPrevious className="transform hover:scale-110 transition-all duration-300 ease-in-out" />
+            <CarouselNext className="transform hover:scale-110 transition-all duration-300 ease-in-out" />
           </Carousel>
         </div>
       </div>
