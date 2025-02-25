@@ -32,14 +32,6 @@ function Daniel() {
               alt="GitHub icon"
             />
           </a>
-
-          <a href="https://www.instagram.com/deeedaniel" target="_blank">
-            <img
-              className="w-10"
-              src={import.meta.env.BASE_URL + "instagramIcon.svg"}
-              alt="Instagram icon"
-            />
-          </a>
         </div>
       </div>
     </div>
