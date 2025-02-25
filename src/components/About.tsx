@@ -1,15 +1,25 @@
+import { motion } from "framer-motion";
+
 function About() {
   return (
     <div className="lg:h-[100vh] h-auto lg:pb-0 pb-10 flex bg-gradient-to-b from-slate-400 to-slate-500">
       <div className="mx-auto my-auto flex flex-col">
         <div className="flex lg:flex-row flex-col lg:space-x-16 space-x-0 mt-5">
-          <img
-            src={import.meta.env.BASE_URL + "aboutImage.png"}
-            alt="About me image, which is me as a kid"
-            className="max-h-[40vh] max-w-[40vw] rounded-3xl my-auto drop-shadow-lg object-cover mx-auto"
-          />
+          <motion.div
+            initial={{ opacity: 0, x: -100 }} // Start invisible, off-screen
+            whileInView={{ opacity: 1, x: 0 }} // Animate when in view
+            transition={{ duration: 1, delay: 0.25, ease: "easeOut" }}
+            viewport={{ once: true }} // Ensures animation plays only once
+            className="flex justify-center"
+          >
+            <img
+              src={import.meta.env.BASE_URL + "aboutImage.png"}
+              alt="About me image, which is me as a kid"
+              className="md:max-h-[40vh] md:max-w-[40vw] max-w-[70vw] rounded-3xl my-auto drop-shadow-lg object-cover mx-auto"
+            />
+          </motion.div>
           <div className="my-auto flex flex-col">
-            <h2 className=" font-semibold lg:text-7xl text-5xl mx-auto lg:mx-0 text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 mb-3 lg:mt-0 mt-5">
+            <h2 className=" font-semibold lg:text-6xl text-5xl mx-auto lg:mx-0 text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 mb-3 lg:mt-0 mt-5">
               About Me
             </h2>
             <p className="lg:w-[35vw] 2xl:text-xl lg:text-sm md:text-sm text-xs text-sm my-auto w-[70vw]">
